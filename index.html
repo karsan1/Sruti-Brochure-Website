@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sruti Sankar's Brochure</title>
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.brochure-page {
+  width: 100%;
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
+  box-sizing: border-box;
+  animation: fadeInUp 0.6s ease;
+}
+
+.brochure-page img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.brochure-page img:hover {
+  transform: scale(1.02);
+}
+
+.page-wrapper {
+  padding-bottom: 2em;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .brochure-page {
+    padding: 1em 0.5em;
+  }
+
+  .brochure-page img {
+    border-radius: 8px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="brochure-page"><img src="01.jpg" alt="Brochure Page 1"></div>
+    <div class="brochure-page"><img src="02.jpg" alt="Brochure Page 2"></div>
+    <div class="brochure-page"><img src="03.jpg" alt="Brochure Page 3"></div>
+    <div class="brochure-page"><img src="04.jpg" alt="Brochure Page 4"></div>
+    <div class="brochure-page"><img src="05.jpg" alt="Brochure Page 5"></div>
+    <div class="brochure-page"><img src="06.jpg" alt="Brochure Page 6"></div>
+  </div>
+</body>
+</html>
